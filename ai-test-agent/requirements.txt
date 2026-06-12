@@ -1,0 +1,6 @@
+pyyaml
+openpyxl
+click
+pydantic
+cryptography
+requests

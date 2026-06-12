@@ -1,0 +1,12 @@
+{
+  "pages_created": {
+    "LoginPage": {
+      "path": "pages/login/LoginPage.java",
+      "created_at": "2026-06-12T14:40:36.578570"
+    }
+  },
+  "tests_created": {},
+  "locators_by_page": {},
+  "test_cases_processed": [],
+  "last_run": "2026-06-12T14:40:36.578630"
+}

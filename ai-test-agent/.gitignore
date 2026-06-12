@@ -1,0 +1,12 @@
+*.pyc
+__pycache__/
+.DS_Store
+ai-test-agent/.agent_memory
+ai-test-agent/memory.json
+config/ai_keys.json
+**/.env
+**/node_modules/
+**/target/
+**/dist/
+framework_output/
+testcases/*.xlsx

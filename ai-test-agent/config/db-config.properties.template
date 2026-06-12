@@ -1,0 +1,7 @@
+# Database configuration template
+# Encrypt values with: python agent/utils/encrypt.py --value your-value
+database.host=localhost
+database.port=1433
+database.username=sa
+database.password=your-password-here
+database.name=testdb
