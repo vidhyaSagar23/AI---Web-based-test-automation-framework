@@ -53,9 +53,24 @@ class ConfigLoader:
         }
 
     def validate(self) -> bool:
-        required = ["framework", "language", "database", "ai_api_key"]
+        """Validate required fields exist"""
+        required = ["framework", "language", "database"]
         for field in required:
             if not self.get(field):
                 print(f"ERROR: Missing required config: {field}")
                 return False
+    
+         # API key is only required for paid providers
+        provider = self.get("ai_provider", "deepseek")
+        if provider in ["claude", "openai", "gemini", "groq"]:
+            if not self.get("ai_api_key"):
+                print(f"ERROR: API key required for {provider}")
+                return False
+    
+    # Ollama (deepseek) doesn't need an API key
+        if provider == "deepseek":
+            if not self.get("ai_base_url"):
+                print(f"ERROR: Missing ai_base_url for Ollama")
+                return False
+    
         return True

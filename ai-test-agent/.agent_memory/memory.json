@@ -1,12 +1,40 @@
 {
   "pages_created": {
     "LoginPage": {
-      "path": "pages/login/LoginPage.java",
-      "created_at": "2026-06-12T14:40:36.578570"
+      "path": "framework_output/pages/loginpage/LoginPage.ts",
+      "created_at": "2026-06-12T17:49:24.010353"
+    },
+    "HomePage": {
+      "path": "pages/home/HomePage.java",
+      "created_at": "2026-06-12T16:40:43.912423"
     }
   },
-  "tests_created": {},
-  "locators_by_page": {},
-  "test_cases_processed": [],
-  "last_run": "2026-06-12T14:40:36.578630"
+  "tests_created": {
+    "TC001": {
+      "name": "test_home_loaded",
+      "path": "tests/home/test_home_loaded.java",
+      "created_at": "2026-06-12T16:40:43.912446"
+    },
+    "TC002": {
+      "name": "test_invalid_login",
+      "path": "tests/login/test_invalid_login.java",
+      "created_at": "2026-06-12T16:40:43.200277"
+    }
+  },
+  "locators_by_page": {
+    "LoginPage": {
+      "count": 3,
+      "elements": [
+        "username_input",
+        "password_input",
+        "login_button"
+      ],
+      "updated_at": "2026-06-12T16:40:43.200270"
+    }
+  },
+  "test_cases_processed": [
+    "TC001",
+    "TC002"
+  ],
+  "last_run": "2026-06-12T17:49:24.010372"
 }

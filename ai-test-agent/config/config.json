@@ -1,4 +1,37 @@
 {
+  "_ai_provider_options": {
+    "FREE_No_API_key_needed": {
+      "provider": "deepseek",
+      "model": "deepseek-r1:7b",
+      "base_url": "http://localhost:11434",
+      "api_key": "",
+      "setup": "ollama pull deepseek-r1:7b && ollama serve"
+    },
+    "PAID_Claude_Anthropic": {
+      "provider": "claude",
+      "model": "claude-opus-4-6",
+      "api_key": "sk-ant-...",
+      "base_url": "https://api.anthropic.com"
+    },
+    "PAID_ChatGPT_OpenAI": {
+      "provider": "openai",
+      "model": "gpt-4o",
+      "api_key": "sk-...",
+      "base_url": "https://api.openai.com"
+    },
+    "PAID_Gemini_Google": {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash",
+      "api_key": "AIza...",
+      "base_url": "https://generativelanguage.googleapis.com"
+    },
+    "PAID_Groq": {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "api_key": "gsk_...",
+      "base_url": "https://api.groq.com"
+    }
+  },
   "framework": "playwright",
   "language": "typescript",
   "database": "mssql",
@@ -10,6 +43,6 @@
   "retry_on_failure": true,
   "ai_provider": "deepseek",
   "ai_model": "deepseek-r1:7b",
-  "ai_api_key": "your-api-key-here",
+  "ai_api_key": "",
   "ai_base_url": "http://localhost:11434"
 }
